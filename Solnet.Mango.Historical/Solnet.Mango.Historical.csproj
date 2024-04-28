@@ -1,22 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<Description>
+  <PropertyGroup>
+    <Description>
 			Solnet.Mango.Historical implements functionality to integrate Mango Markets historical data into .Net applications.
 		</Description>
-		<TargetFramework>net6.0</TargetFramework>
-		<IsPackable>true</IsPackable>
-		<RootNamespace>Solnet.Mango.Historical</RootNamespace>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="BlockMountain.TradingView" Version="6.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Solnet.Mango\Solnet.Mango.csproj" />
-	</ItemGroup>
-
-	<Import Project="..\SharedBuildProperties.props" />
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <RootNamespace>Solnet.Mango.Historical</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BlockMountain.TradingView" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Solnet.Mango\Solnet.Mango.csproj" />
+  </ItemGroup>
+  <Import Project="..\SharedBuildProperties.props" />
 </Project>
