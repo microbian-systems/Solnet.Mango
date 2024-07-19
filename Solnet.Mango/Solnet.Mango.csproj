@@ -3,7 +3,6 @@
     <Description>
 			Solnet.Mango implements functionality to integrate Mango Markets into .Net applications.
 		</Description>
-    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <RootNamespace>Solnet.Mango</RootNamespace>
   </PropertyGroup>
@@ -16,13 +15,15 @@
     </AssemblyAttribute>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Solnet.Programs" Version="6.0.13" />
-    <PackageReference Include="Solnet.Rpc" Version="6.0.13" />
-    <PackageReference Include="Solnet.Wallet" Version="6.0.13" />
-    <PackageReference Include="Solnet.Serum" Version="6.0.13" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Solnet.Serum\Solnet.Serum\Solnet.Serum.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Programs\Solnet.Programs.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Rpc\Solnet.Rpc.csproj" />
+    <ProjectReference Include="..\..\Solnet\src\Solnet.Wallet\Solnet.Wallet.csproj" />
   </ItemGroup>
   <Import Project="..\SharedBuildProperties.props" />
 </Project>
